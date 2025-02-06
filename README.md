@@ -58,7 +58,7 @@ We welcome contributions! Please follow these steps to contribute:
 4. Create a pull request to the main branch.
 
 ## License
-This project is licensed under the [] - see the [LICENSE](LICENSE) file for details.
+This project is licensed .
 
 ## Contact
 For any queries or feedback, please contact [josephekisaopurongo@gmail.com].

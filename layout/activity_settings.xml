@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <!-- Brightness SeekBar -->
+    <SeekBar
+        android:id="@+id/brightnessSeekBar"
+        android:background="@drawable/roundedconner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:max="255"
+        android:progress="127" />
+
+    <!-- Notifications Switch -->
+    <Switch
+        android:id="@+id/notificationsSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@id/brightnessSeekBar"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedconner"
+        android:text="App Notifications" />
+
+    <!-- Theme RadioGroup -->
+    <RadioGroup
+        android:id="@+id/themeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/notificationsSwitch"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/darkThemeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedconner"
+            android:backgroundTint="@color/material_dynamic_primary60"
+            android:text="Dark Theme" />
+
+        <RadioButton
+            android:id="@+id/lightThemeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedconner"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="Light Theme" />
+    </RadioGroup>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/themeRadioGroup"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="80dp"
+        android:text="save changes" />
+
+</RelativeLayout>

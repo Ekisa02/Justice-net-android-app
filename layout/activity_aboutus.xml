@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:background="@color/grean"
+    android:backgroundTint="@color/jungle_grean"
+    tools:context=".AboutusActivity">
+
+    <TextView
+        android:id="@+id/txtarrowbackicon"
+        android:layout_width="30dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/baseline_arrow">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:text="Kipkogei Justus "
+        android:layout_marginStart="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="65dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/photocover"
+            android:backgroundTint="@color/white"
+            android:src="@mipmap/justus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangleshape"
+            android:padding="10dp"
+            android:text="~Role :Founder/Developer justiceNetapp \n~Background: Environmental Science Student @ university of Eldoret,millennium fellowship class 2024 and Planetary Health cumpus Ambassador. \n~Experince:Involved in environmental advocacy,community sensitiization and focused on sustainable development Goal  Climate Action\n~Mission:Commited to empowering communities,promoting environmental justice and driving  accountability through innovative solutions "
+            android:textSize="10dp" />
+        />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout2"
+        android:text="Ookah Mitchelle"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+      />
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/layout1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/photocover"
+            android:backgroundTint="@color/white"
+            android:src="@mipmap/mithell_foreground" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/rectangleshape"
+            android:padding="10dp"
+            android:text="~Role :Founder/Developer justiceNetapp \n~Background: Biochemistry student @ university of Eldoret\n~Experince:Focused on water  and sunitation project sustainable and development Goal NO.6\n~Mission:Commited to making the world a better place to live in through enhancing the environment using innovative solutions "
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutapp"
+        android:layout_below="@id/layout5"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/roundedconner"
+            android:gravity="center"
+            android:text="About JusticeNet app"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="serif"
+            android:gravity="start"
+            android:paddingStart="10dp"
+            android:text="\tMission\n \tIt addresses the lack of accessible mechanisms for reporting  and tackling environmental injustices, ie pollution,deforestration, and illegal waste dumping.These issues often go unnoticed because affected individuals  lack the tools, knowledge,and resources to act.\n \tOur digital platform  allows people to easly report environmental violations,track  and map the these issues,and connect with legal and adovocacy resources,by amplifying voices and promoting environmental justices.\n \t Justicenetdrives accountability and action to protect our environment and ensure fair treatment for all."
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout3"
+        android:text="Mitchelle Hedwig"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+     />
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/layout2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/photocover"
+            android:backgroundTint="@color/white"
+            android:padding="15dp"
+            android:src="@mipmap/hadwan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10dp"
+            android:background="@drawable/rectangleshape"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+
+            android:padding="10dp"
+            android:text="~Role :Founder/Developer justiceNetapp \n~Background: Biochemistry student @ university of Eldoret\n~Experince:Focused on water  and sunitation project sustainable and development Goal NO.6\n~Mission:Commited to making the world a better place to live in through enhancing the environment using innovative solutions "/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/layout3"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/photocover"
+            android:backgroundTint="@color/material_dynamic_neutral100"
+            android:padding="5dp"
+            android:src="@mipmap/geffg_foreground" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangleshape"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="~Role :Founder/Developer justiceNetapp \n~Background: Actuarial Science student @ university of Eldoret\n~Experince:Focused on water  and sunitation project sustainable and development Goal NO.6\n~Mission:Commited to making the world a better place to live in through enhancing the environment using innovative solutions "
+            android:textSize="10dp"
+            android:padding="10dp"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout4"
+        android:text="Geff gitonga"
+        android:layout_marginStart="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/layout4"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/photocover"
+            android:backgroundTint="@color/material_dynamic_neutral100"
+            android:src="@mipmap/vivian_foreground" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="~Role :Founder/Developer justiceNetapp \n~Background: Biochemistry student @ university of Eldoret\n~Experince:Focused on water  and sunitation project sustainable and development Goal NO.6\n~Mission:Commited to making the world a better place to live in through enhancing the environment using innovative solutions "
+            android:textSize="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:background="@drawable/rectangleshape"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout5"
+        android:text="Juma Vivian "
+        android:layout_marginStart="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
+

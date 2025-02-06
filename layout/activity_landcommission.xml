@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jungle_grean"
+    tools:context=".LandcommissionActivity">
+
+
+    <GridLayout
+        android:id="@+id/Gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:background="@drawable/rectangleshape"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewphonecall"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="74dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/baseline_wifi_calling_3_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone\n Call"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewupload"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="86dp"
+                    android:layout_height="39dp"
+                    android:background="@drawable/baseline_upload_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UpLoad"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"> </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewemergency"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="31dp"
+                    android:background="@mipmap/aboutus" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergence\nnumber"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/photo" />
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camera"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"> </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewemail"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/baseline_email_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewback"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="73dp"
+                    android:layout_height="32dp"
+                    android:background="@mipmap/photo2_foreground" />
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Record\nAudio"
+                    android:textAlignment="center"
+                    android:textSize="23dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"> </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gridlayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:text="Learn more about National Land Commision:"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtnemaacivity"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/roundedconner"
+            android:backgroundTint="@color/black"
+            android:padding="4dp"
+            android:gravity="start"
+            android:text="https://www.landcommission.go.ke/"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

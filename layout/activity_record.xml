@@ -1,0 +1,94 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/jungle_grean">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearlayout1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="90dp"
+        android:visibility="gone"
+        android:padding="15dp">
+        <Button
+            android:id="@+id/play_pause_audio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:backgroundTint="@color/black"
+            android:visibility="gone"/>
+
+        <SeekBar
+            android:id="@+id/audio_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/yellow"
+            android:layout_below="@+id/play_pause_audio_button"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share the audio"
+            android:id="@+id/txtshare"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangleshape"
+            android:padding="8dp"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/record_audio_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:text="Start Recording"/>
+    <Button
+        android:id="@+id/stop_audio_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Recording"
+        android:layout_marginTop="450dp"
+        android:visibility="gone"/>
+
+
+    <!-- TextView to display recording status -->
+    <TextView
+        android:id="@+id/recording_status_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Not recording"
+        android:background="@drawable/rectangleshape"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/record_audio_button"
+        android:layout_marginTop="16dp"/>
+
+
+    <SeekBar
+        android:id="@+id/recording_wave_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
+        android:max="180"
+        android:background="@color/white"
+        android:layout_below="@id/recording_status_textview"
+        android:progress="0"/>
+
+
+</RelativeLayout>

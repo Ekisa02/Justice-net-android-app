@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <ImageView
+        android:id="@+id/imageViewcamera"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnTakePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@id/imageViewcamera"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="132dp"
+        android:text="Take a picture" />
+
+    <Button
+        android:id="@+id/btnSharePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTakePicture"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="134dp"
+        android:text="Share Picture"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jungle_grean"
+    tools:context=".PartnersActivity">
+
+ <TextView
+     android:id="@+id/txtarrowbackicon"
+     android:layout_width="100dp"
+     android:layout_height="54dp"
+     android:layout_marginTop="40dp"
+     android:layout_marginStart="10dp"
+     android:background="@drawable/roundedconner"
+     android:backgroundTint="@color/white"
+     android:drawableStart="@drawable/baseline_arrow" />
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/txtdescriptions"
+     android:layout_marginStart="10dp"
+     android:layout_marginTop="150dp"
+     android:layout_marginEnd="10dp"
+     android:background="@drawable/roundedconner"
+     android:backgroundTint="@color/white"
+     android:fontFamily="sans-serif"
+     android:padding="6dp"
+     android:text="JusticeNet app partners with legal exparts, environmental  NGO`s and advocacy grops.\nTheir support provides the platform with the valuable resources to guide  affected communities  in seeking justice. "
+     android:textColor="@color/black"
+     android:textSize="18sp" />
+
+ <GridLayout
+     android:id="@+id/Gridlayout"
+     android:layout_width="match_parent"
+     android:layout_height="335dp"
+     android:layout_below="@+id/txtdescriptions"
+     android:layout_marginTop="70dp"
+     android:background="@drawable/roundedconner"
+     android:backgroundTint="@color/black"
+     android:columnCount="2"
+     android:rowCount="3">
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardnema"
+      android:layout_width="wrap_content"
+      android:layout_height="140dp"
+      android:layout_row="0"
+      android:layout_rowWeight="1"
+      android:layout_column="0"
+      android:layout_columnWeight="1"
+      app:cardBackgroundColor="@color/design_default_color_on_primary"
+      app:cardCornerRadius="10dp"
+      app:cardElevation="8dp"
+      app:cardUseCompatPadding="true">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/nema" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEMA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+   </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardkws"
+      android:layout_width="wrap_content"
+      android:layout_height="140dp"
+      android:layout_row="1"
+      android:layout_rowWeight="1"
+      android:layout_column="1"
+      android:layout_columnWeight="1"
+      app:cardBackgroundColor="@color/design_default_color_on_primary"
+      app:cardCornerRadius="10dp"
+      app:cardElevation="8dp"
+      app:cardUseCompatPadding="true">
+
+   <LinearLayout
+       android:layout_width="66dp"
+       android:layout_height="36dp"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="36dp"
+        android:background="@drawable/kfs" />
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:text="KWS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+   </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardwra"
+      android:layout_width="wrap_content"
+      android:layout_height="140dp"
+      android:layout_row="1"
+      android:layout_rowWeight="1"
+      android:layout_column="0"
+      android:layout_columnWeight="1"
+      app:cardBackgroundColor="@color/design_default_color_on_primary"
+      app:cardCornerRadius="10dp"
+      app:cardElevation="8dp"
+      app:cardUseCompatPadding="true">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="47dp"
+        android:background="@drawable/wra" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WRA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+   </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardkfs"
+      android:layout_width="wrap_content"
+      android:layout_height="140dp"
+      android:layout_row="0"
+      android:layout_rowWeight="1"
+      android:layout_column="1"
+      android:layout_columnWeight="1"
+      app:cardBackgroundColor="@color/design_default_color_on_primary"
+      app:cardCornerRadius="10dp"
+      app:cardElevation="8dp"
+      app:cardUseCompatPadding="true">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:background="@drawable/kfs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KFS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+   </LinearLayout>
+  </androidx.cardview.widget.CardView>
+ </GridLayout>
+ <TextView
+     android:id="@+id/copyrightTextView"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:foregroundGravity="bottom"
+     android:gravity="center"
+     android:layout_marginTop="60dp"
+     android:layout_below="@+id/Gridlayout"
+     android:textStyle="bold|italic"
+     android:layout_marginBottom="16dp"
+     android:text="© 2024 JusticeNet.All rights reserved."
+     android:textColor="#181717"
+     android:textSize="17sp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"/>
+
+</RelativeLayout>

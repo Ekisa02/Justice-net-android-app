@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateAccountActivity">
+
+    <ImageView
+        android:id="@+id/createaccountimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/circle_image"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photocover" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/form1layoutcreateaccount"
+        android:orientation="vertical"
+        android:layout_below="@+id/createaccountimageview">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Hellow!"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textsigningup"
+            android:layout_marginStart="50dp"
+            android:text="Get started by signing up!"
+            android:textColor="@color/material_dynamic_primary20"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/form2createaccount"
+        android:layout_below="@id/form1layoutcreateaccount"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailcreateaccount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/roundedconner"
+            android:drawableStart="@drawable/ic_launcher_envelope"
+            android:drawablePadding="3dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/design_default_color_on_secondary" />
+
+        <EditText
+            android:id="@+id/passwordcreateaccount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundedconner"
+            android:drawableStart="@drawable/ic_launcher_lock"
+            android:drawablePadding="3dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/design_default_color_on_secondary" />
+
+        <EditText
+            android:id="@+id/confirmpasswordcreateaccount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundedconner"
+            android:drawableStart="@drawable/ic_launcher_lock"
+            android:drawablePadding="3dp"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/design_default_color_on_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btncreateaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Create Account"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/createaccountprogressbar"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/form2createaccount"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Already have an account!"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/btncreateaccountlogin"
+            android:text="Login"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".contactActivity">
+    <TextView
+        android:id="@+id/txtarrowbackicon"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/grean"
+        android:drawableStart="@drawable/baseline_arrow">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvia"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="140dp"
+
+        android:backgroundTint="@color/material_dynamic_tertiary40"
+        android:gravity="center"
+        android:text="Reach out our pannel one on one via ;"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textSize="24dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txtsocialmedia"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="1. Social Media platforms "
+        android:layout_below="@id/linearlayout"
+        android:layout_marginTop="40dp"/>
+
+    <GridLayout
+        android:id="@+id/Gridlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtsocialmedia"
+        android:foregroundGravity="bottom"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/roundedconner"
+        android:columnCount="2"
+        android:backgroundTint="@color/black"
+        android:rowCount="1">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:background="@mipmap/whatsapp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Whatsapp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="52dp"
+                    android:background="@mipmap/contactus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/linearlayout"
+
+       android:layout_below="@id/txtvia"
+       android:orientation="vertical"
+       android:layout_marginTop="50dp"
+       android:background="@drawable/rectangleshape">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:text="2. Email"
+           android:textSize="25dp"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="30dp"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:text="1.mitchellenabwire04@gmail.com"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="30dp"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:text="2.Rotichjustus2020.@gmail.com"/>
+
+
+   </LinearLayout>
+
+</RelativeLayout>

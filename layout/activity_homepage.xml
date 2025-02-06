@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jungle_grean"
+    android:orientation="vertical"
+    tools:context=".HomepageActivity">
+
+    <TextView
+        android:layout_width="76dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/white"
+        android:id="@+id/txtarrowbackicon"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="5dp"
+        android:layout_marginStart="10dp"
+        android:drawableStart="@drawable/baseline_arrow">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="341dp"
+        android:layout_height="144dp"
+        android:background="@drawable/nature"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Lets protect our Environment!"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/howitworks"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="how Justice Net app works "
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <RelativeLayout
+        android:id="@+id/Relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+               android:background="@mipmap/arrow_foreground"/>
+
+            <TextView
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangleshape"
+                android:backgroundTint="@color/white"
+                android:padding="8dp"
+                android:text=".You encounter an issue which these organizations address "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/arrow_foreground"/>
+
+
+            <TextView
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangleshape"
+                android:backgroundTint="@color/white"
+                android:padding="8dp"
+                android:text=".Navigate to Main Button "
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/arrow_foreground"/>
+
+
+            <TextView
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangleshape"
+                android:backgroundTint="@color/white"
+                android:padding="8dp"
+                android:text=".Select report issue "
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout3"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/arrow_foreground" />
+
+
+            <TextView
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangleshape"
+                android:backgroundTint="@color/white"
+                android:padding="8dp"
+                android:text=".Select Respective organizations "
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout4"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/arrow_foreground"/>
+
+
+            <TextView
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangleshape"
+                android:backgroundTint="@color/white"
+                android:padding="8dp"
+                android:text=".Click report issue button  "
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout5"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/arrow_foreground" />
+
+
+            <TextView
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangleshape"
+                android:backgroundTint="@color/white"
+                android:padding="8dp"
+                android:text=".Report your issue in desired form "
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnhpcontinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/copyrightTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="16dp"
+        android:text="© 2024 JusticeNet.All rights reserved."
+        android:textColor="#181717"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</LinearLayout>

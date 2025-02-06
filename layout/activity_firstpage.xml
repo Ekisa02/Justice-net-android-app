@@ -1,0 +1,381 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/btn_default_small"
+    android:backgroundTint="@color/jungle_grean"
+    tools:context=".FirstpageActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutpictorials"
+        android:layout_width="405dp"
+        android:layout_height="228dp"
+        android:layout_below="@+id/Gridlayout"
+        android:layout_marginTop="40dp"
+        android:background="@android:drawable/dialog_frame"
+        android:backgroundTint="@color/jungle_grean"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!--  Title for Pictorials  -->
+        <TextView
+            android:id="@+id/pictorialsTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Learn More"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <!--  Pictorial 1 with Description  -->
+        <!--  Pictorial 2 with Description  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pictorial1ImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/nature" />
+
+            <TextView
+                android:id="@+id/pictorial1Descriptiontxtwater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Clean water source and rivers!"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pictorial2ImageView"
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:src="@mipmap/forest" />
+
+            <TextView
+                android:id="@+id/pictorial2Descriptiontxtecofriendly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Discover eco-friendly tips"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--  Pictorial 3 with Description  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pictorial3ImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/background" />
+
+            <TextView
+                android:id="@+id/pictorial3Descriptiontxteplore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Explore eco-friendly initiatives"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--  Pictorial 4 with Description  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pictorial4ImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:src="@mipmap/environment" />
+
+            <TextView
+                android:id="@+id/pictorial4DescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn about sustainable practices"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/Gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/roundedconner"
+        android:columnCount="2"
+        android:rowCount="3">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewmain"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="74dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/baseline_view_column_24"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Main"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewexitapp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:background="@mipmap/exitapp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exit app"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"> </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewaboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="31dp"
+                    android:background="@mipmap/aboutus" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About us"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewsettings"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/design_default_color_on_primary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="32dp"
+                    android:background="@mipmap/environment_foreground" />
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"> </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+   <GridLayout
+       android:id="@+id/Gridlayout1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/linearLayoutpictorials"
+       android:foregroundGravity="bottom"
+       android:layout_marginTop="40dp"
+       android:background="@drawable/roundedconner"
+       android:columnCount="3"
+       android:rowCount="1">
+       <androidx.cardview.widget.CardView
+           android:id="@+id/hometab"
+           android:layout_width="wrap_content"
+           android:layout_row="0"
+           android:layout_rowWeight="1"
+           android:layout_column="0"
+           android:layout_columnWeight="1"
+           app:cardBackgroundColor="@color/design_default_color_on_primary"
+           app:cardCornerRadius="10dp"
+           app:cardElevation="8dp"
+           android:backgroundTint="@color/white"
+           app:cardUseCompatPadding="true">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="78dp"
+                   android:layout_height="32dp"
+                   android:background="@mipmap/home" />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Home page"
+                   android:textAlignment="center"
+                   android:textSize="15dp"
+                   android:textColor="@color/black"
+                   android:textStyle="bold">
+               </TextView>
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:id="@+id/contactus"
+           android:layout_width="wrap_content"
+           android:layout_height="14dp"
+           android:layout_row="0"
+           android:layout_rowWeight="1"
+           android:layout_column="1"
+           android:layout_columnWeight="1"
+           app:cardBackgroundColor="@color/design_default_color_on_primary"
+           app:cardCornerRadius="10dp"
+           app:cardElevation="8dp"
+           android:backgroundTint="@color/white"
+           app:cardUseCompatPadding="true">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="57dp"
+                   android:layout_height="25dp"
+                   android:background="@mipmap/contactus" />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Contact us"
+                   android:textAlignment="center"
+                   android:textSize="15dp"
+                   android:textColor="@color/black"
+                   android:textStyle="bold">
+               </TextView>
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:id="@+id/community"
+           android:layout_width="wrap_content"
+           android:layout_height="14dp"
+           android:layout_row="0"
+           android:layout_rowWeight="1"
+           android:layout_column="2"
+           android:backgroundTint="@color/white"
+           android:layout_columnWeight="1"
+           app:cardBackgroundColor="@color/design_default_color_on_primary"
+           app:cardCornerRadius="10dp"
+           app:cardElevation="8dp"
+           app:cardUseCompatPadding="true">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="23dp"
+                   android:src="@mipmap/community" />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="partners"
+                   android:textAlignment="center"
+                   android:textSize="15dp"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"> </TextView>
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+
+
+   </GridLayout>
+
+</RelativeLayout>

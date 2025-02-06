@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jungle_grean"
+    android:orientation="horizontal"
+    tools:context=".ReportedissueActivity">
+    <TextView
+        android:id="@+id/txtarrowbackicon"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/baseline_arrow" />
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="376dp"
+        android:layout_height="563dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnlandcommisin"
+            android:layout_width="340dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="National Land Commission" />
+
+        <Button
+            android:id="@+id/btneacc"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/btnlandcommisin"
+            android:layout_marginTop="50dp"
+            android:text="Ethics and Anti-Corruption Commission" />
+
+        <Button
+            android:id="@+id/btnkhrc"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btneacc"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Kenya Human Rights Commission" />
+
+        <Button
+            android:id="@+id/btn_kfs"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/btnkhrc"
+            android:layout_marginTop="50dp"
+            android:text="Kenya Forest Service" />
+
+        <Button
+            android:id="@+id/btnnema"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_kfs"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="National Environment Management Authority" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

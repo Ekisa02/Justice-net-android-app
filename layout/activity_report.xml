@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jungle_grean"
+    tools:context=".ReportActivity">
+
+
+    <TextView
+        android:id="@+id/txtarrowbackicon"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:drawableStart="@drawable/baseline_arrow" />
+
+
+    <TextView
+        android:id="@+id/btnreport"
+        android:layout_width="223dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/roundedconner"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="Report issue"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btnreport"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
+
+
+</RelativeLayout>
